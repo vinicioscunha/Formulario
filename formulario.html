@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Cadastro de Equipamento</h1>
+        <p>Complete as informações do equipamento:</p>
+        
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Ordem de Serviço:</label>
+                <input type="number" name="ordem" id="ordem">
+                <br><br>
+                <label>Equipamento:</label>
+                <select id="equipamento">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Computador</option>
+                    <option>Monitor</option>
+                    <option>Teclado</option>
+                    <option>Mouse</option>
+                </select>
+                
+                <br><br>
+                <label>Técnico Responsável:</label>
+                <input type="text" name="tecnico" id="tecnico">
+                <br><br>
+                <label>Destino:</label>
+                <input type="text" name="destino" id="destino">
+                <br><br>
+                <label>Data de Recolhimento:</label>
+                <input type="datetime-local" name="recolhimento" id="recolhimento">
+                <br><br>
+                <label>Tombo:</label>
+                <input type="text" name="tombo" id="tombo">
+                <br><br>
+                
+            </div>
+                
+            
+        </fieldset><br>
+
+        <fieldset>
+        <div>
+            <label>Descrição do problema do equipamento: </label>
+            <br>
+            <textarea rows="10" cols="40">
+            </textarea>
+        </div>
+
+        <div>
+            
+            <label>Progresso de resolução do equipamento:</label><br>
+            <input type="checkbox" id="item1" name="item1" value="Sistema Operacional">
+            <label for="item1" >Instalar Sistema Operacional</label><br>
+            <input type="checkbox" id="item2" name="item2" value="Office">
+            <label for="item2">Instalar M.O 2013</label><br>
+            <input type="checkbox" id="item3" name="item3" value="winrar">
+            <label for="item3">Instalar Winrar</label><br>
+            <input type="checkbox" id="item4" name="item4" value="oracleJava">
+            <label for="item4">Instalar Oracle Java</label><br>
+            <input type="checkbox" id="item5" name="item5" value="Adobe">
+            <label for="item5">Instalar Adobe Reader</label><br>
+            <input type="checkbox" id="item6" name="item6" value="navegadores">
+            <label for="item6">Instalar navegadores</label><br>
+            <input type="checkbox" id="item7" name="item7" value="anydesk">
+            <label for="item7">Instalar Anydesk</label>
+            <input type="checkbox" id="item8" name="item8" value="antivirus">
+            <label for="item8">Instalar Antivírus</label>
+
+        </div>
+
+        
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
