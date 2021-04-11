@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Equipamento</title>
 </head>
 <body>
     
-    <div>
-        <h1>Cadastro de Equipamento</h1>
-        <p>Complete as informações do equipamento:</p>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Equipamento</h1>
+        <p id="subtitulo">Complete as informações do equipamento:</p>
         
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Ordem de Serviço:</label>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="ordem"><strong>Ordem de Serviço:</strong></label>
                 <input type="number" name="ordem" id="ordem">
                 <br><br>
-                <label>Equipamento:</label>
+                <label><strong>Equipamento:</strong></label>
                 <select id="equipamento">
                     <option selected disabled value="">Selecione</option>
                     <option>Computador</option>
@@ -29,17 +29,17 @@
                 </select>
                 
                 <br><br>
-                <label>Técnico Responsável:</label>
-                <input type="text" name="tecnico" id="tecnico">
+                <label for="tecnico"><strong>Técnico Responsável:</strong></label>
+                <input type="text" name="tecnico" id="tecnico" required>
                 <br><br>
-                <label>Destino:</label>
-                <input type="text" name="destino" id="destino">
+                <label for="destino"><strong>Destino:</strong></label>
+                <input type="text" name="destino" id="destino" required>
                 <br><br>
-                <label>Data de Recolhimento:</label>
-                <input type="datetime-local" name="recolhimento" id="recolhimento">
+                <label for="recolhimento"><strong>Data de Recolhimento:</strong></label>
+                <input type="datetime-local" name="recolhimento" id="recolhimento" required>
                 <br><br>
-                <label>Tombo:</label>
-                <input type="text" name="tombo" id="tombo">
+                <label for="tombo"><strong>Tombo:</strong></label>
+                <input type="text" name="tombo" id="tombo" required>
                 <br><br>
                 
             </div>
@@ -47,17 +47,17 @@
             
         </fieldset><br>
 
-        <fieldset>
-        <div>
+        <fieldset class="grupo">
+        <div class="campo">
             <label>Descrição do problema do equipamento: </label>
             <br>
-            <textarea rows="10" cols="40">
+            <textarea rows="10" style="width: 26em" id="descricao" name="descricao">
             </textarea>
         </div>
 
-        <div>
+        <div class="campo">
             
-            <label>Progresso de resolução do equipamento:</label><br>
+            <label for="item1"><strong>Progresso de resolução do equipamento:</strong></label><br>
             <input type="checkbox" id="item1" name="item1" value="Sistema Operacional">
             <label for="item1" >Instalar Sistema Operacional</label><br>
             <input type="checkbox" id="item2" name="item2" value="Office">
@@ -78,7 +78,9 @@
         </div>
 
         
-        </fieldset>
+        </fieldset> <br>
+
+        <button class="botao" type="submit">Concluído</button>
 
     </form>
 
